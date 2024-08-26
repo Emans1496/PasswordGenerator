@@ -1,0 +1,83 @@
+body {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
+    font-family: Karla, Poppins, Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header {
+    color: #4ADF86;
+}
+
+.subHeader {
+    color: #D5D4D8;
+}
+
+#generatePasswordsBtn {
+    background-color: #4ADF86;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 13px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid #2F3E53;
+}
+
+#passwordOneParagraph,
+#passwordTwoParagraph {
+    display: flexbox;
+    background-color: #273549;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#strengthIndicator {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.strength-indicator span {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.strength-indicator .weak {
+    color: white;
+    background-color: red;
+}
+
+.strength-indicator .medium {
+    color: white;
+    background-color: orange;
+}
+
+.strength-indicator .good {
+    color: black;
+    background-color: yellow;
+}
+
+.strength-indicator .strong {
+    color: white;
+    background-color: green;
+}
+
+input[type=range] {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #4ADF86;
+}

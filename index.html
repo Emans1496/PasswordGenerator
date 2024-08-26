@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <img src="passwordGenerator.png" style="max-width: 150px;">
+    <h1>Generate a <br><span class="header"> random password</span></h1>
+    <p>Never use an insecure password again.</p>
+
+    <label for="passwordLength">Password Length: <span id="passwordLengthValue">15</span></label>
+    <input type="range" id="passwordLength" value="15" min="8" max="50">
+
+    <div>
+        <input type="checkbox" id="includeUppercase" checked>
+        <label for="includeUppercase">Include Uppercase</label>
+    </div>
+    <div>
+        <input type="checkbox" id="includeLowercase" checked>
+        <label for="includeLowercase">Include Lowercase</label>
+    </div>
+    <div>
+        <input type="checkbox" id="includeNumbers" checked>
+        <label for="includeNumbers">Include Numbers</label>
+    </div>
+    <div>
+        <input type="checkbox" id="includeSymbols" checked>
+        <label for="includeSymbols">Include Symbols</label>
+    </div>
+
+    <p id="errorMessage" style="color: red;"></p>
+
+    <button id="generatePasswordsBtn">Generate passwords</button>
+    <hr class="line">
+    <div>
+        <p id="passwordOneParagraph">Option One</p>
+        <p id="passwordTwoParagraph">Option Two</p>
+        <p id="copyMessage"></p>
+    </div>
+
+    <div id="strengthIndicator" class="strength-indicator">Password Strength: <span id="strengthText">N/A</span></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
